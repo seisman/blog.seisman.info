@@ -1,3 +1,6 @@
 [submodule "themes/next"]
 	path = themes/next
 	url = https://github.com/seisman/hexo-theme-next.git
+[submodule "source"]
+	path = source
+	url = https://github.com/seisman/seisman.info.posts.git

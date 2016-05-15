@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: SeisMan
+subtitle: 学会整理自己的经验是科研的第一步。
+description: 地球物理学在读博士
+author: SeisMan
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://seisman.info
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title.html
 permalink_defaults:
 
 # Directory
@@ -28,7 +28,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -36,7 +36,7 @@ filename_case: 0
 render_drafts: false
 post_asset_folder: false
 relative_link: false
-future: true
+future: false
 highlight:
   enable: true
   line_number: true
@@ -65,7 +65,52 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:seisman/seisman.info.git
+  branch: gh-pages
+
+
+# Plugins
+## feed
+feed:
+  type: atom
+  path: all.atom.xml
+  limit: 20
+
+## Search
+search:
+  path: search.xml
+  field: all
+
+## Marked
+marked:
+  breaks: false
+
+## archive
+archive_generator:
+  per_page: 20
+
+## category
+category_generator:
+  per_page: 20
+
+## tag
+tag_generator:
+  per_page: 20
+
+## all-minifier
+html_minifier:
+  enable: true
+
+css_minifier:
+  enable: true
+
+js_minifier:
+  enable: true
+
+image_minifier:
+  enable: false
