@@ -101,16 +101,3 @@ category_generator:
 ## tag
 tag_generator:
   per_page: 20
-
-## all-minifier
-html_minifier:
-  enable: true
-
-css_minifier:
-  enable: true
-
-js_minifier:
-  enable: true
-
-image_minifier:
-  enable: false

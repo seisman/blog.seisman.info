@@ -6,8 +6,13 @@
     "version": "3.2.0"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-htmlclean": "^2.7.6",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-uglify": "^1.5.3",
     "hexo": "^3.2.0",
-    "hexo-all-minifier": "0.0.13",
     "hexo-deployer-git": "^0.1.0",
     "hexo-filter-auto-spacing": "^0.2.1",
     "hexo-filter-fix-cjk-spacing": "^0.0.3",
