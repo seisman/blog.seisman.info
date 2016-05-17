@@ -14,7 +14,6 @@
     "gulp-uglify": "^1.5.3",
     "hexo": "^3.2.0",
     "hexo-deployer-git": "^0.1.0",
-    "hexo-filter-auto-spacing": "^0.2.1",
     "hexo-filter-fix-cjk-spacing": "^0.0.3",
     "hexo-generator-archive": "^0.1.4",
     "hexo-generator-category": "^0.1.3",
