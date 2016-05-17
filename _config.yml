@@ -75,6 +75,22 @@ deploy:
 
 
 # Plugins
+plugins:
+  - hexo-server
+  - hexo-renderer-ejs
+  - hexo-renderer-pandoc
+  - hexo-renderer-stylus
+  - hexo-generator-archive
+  - hexo-generator-category
+  - hexo-generator-feed
+  - hexo-generator-index
+  - hexo-generator-search
+  - hexo-generator-seo-friendly-sitemap
+  - hexo-generator-tag
+  - hexo-filter-fix-cjk-spacing
+  - hexo-deployer-git
+
+
 ## feed
 feed:
   type: atom
