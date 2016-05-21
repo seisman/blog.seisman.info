@@ -97,3 +97,17 @@ $ hexo g && gulp && hexo d
 ```bash
 $ gulp imagemin
 ```
+
+### 网页自动刷新
+
+`hexo s` 会自动监测所有文件的变化，但不会去主动刷新浏览器，因而需要
+经常按F5以刷新页面。`hexo-browsersync` 插件可以实现浏览器的自动刷新，
+但该插件会导致个别HTML页面的尾部出现乱码，因而仅供个人使用，不写到
+`package.json` 中。
+
+```bash
+$ npm install -g browser-sync
+$ npm install hexo-browsersync
+# 在 _config.yml 中指定使用 hexo-browsersync 插件
+$ hexo s
+```
