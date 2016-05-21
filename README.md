@@ -47,20 +47,7 @@ $ exec $SHELL -l
 # 2. 安装 [Node.js](https://nodejs.org/)
 $ nvm install v4
 
-# 3. Clone项目源码至本地
-$ git clone https://github.com/seisman/seisman.info.git
-$ cd seisman.info
-
-# 4. 初始化并更新子模块
-$ git submodule update --init --recursive --remote
-
-# 5. 全局安装 [Hexo](https://hexo.io/)
-$ npm install hexo -g
-
-# 6. 安装项目依赖
-$ npm install
-
-# 7. 安装pandoc作为markdown解析器
+# 3. 安装pandoc作为markdown解析器
 # Ubuntu:
 $ sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
 $ sudo apt-get update
@@ -68,6 +55,19 @@ $ sudo apt-get install pandoc
 # CentOS
 $ sudo yum install epel-release
 $ sudo yum install pandoc
+
+# 4. Clone项目源码至本地
+$ git clone https://github.com/seisman/seisman.info.git
+$ cd seisman.info
+
+# 5. 初始化并更新子模块
+$ git submodule update --init --recursive --remote
+
+# 6. 全局安装 [Hexo](https://hexo.io/)
+$ npm install hexo gulp -g
+
+# 7. 安装项目依赖
+$ npm install
 
 # 8. 生成网站，到 `http://localhost:4000/` 查看
 $ hexo s
