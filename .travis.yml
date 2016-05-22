@@ -14,7 +14,9 @@ cache:
 install:
   # fetch the latest commit of submodules
   - git submodule update --remote
-  - sudo apt-get -y install pandoc
+  # install the latest version of pandoc
+  - curl -s https://api.github.com/repos/jgm/pandoc/releases/latest | grep 'browser_download_url.*deb' | awk '{print "wget", $2}' | sh
+  - sudo dpkg -i pandoc-*-amd64.deb
   - npm install hexo gulp -g
   - npm install
 
