@@ -7,6 +7,10 @@ branches:
   only:
     - master
 
+cache:
+  directories:
+    - node_modules
+
 install:
   # fetch the latest commit of submodules
   - git submodule update --remote
