@@ -7,11 +7,11 @@
 
 博客自v2.0版本开始，将网站生成引擎配置、主题和博文独立开来，三者位于独立的仓库中。
 主题和博文均作为网站生成引擎（即本项目）的子模块。
-本项目会追踪主题的 `seisman` 分支和博文的 `dev` 分支。
+本项目会追踪主题的 `seisman` 分支和博文的 `master` 分支。
 
 - 引擎： [![Hexo](https://img.shields.io/badge/Hexo-master-blue.svg)](https://github.com/seisman/seisman.info/tree/master)
 - 主题： [![NexT](https://img.shields.io/badge/NexT-seisman-blue.svg)](https://github.com/seisman/hexo-theme-next/tree/seisman)
-- 内容： [![Posts](https://img.shields.io/badge/Posts-dev-blue.svg)](https://github.com/seisman/seisman.info.posts/tree/dev)
+- 内容： [![Posts](https://img.shields.io/badge/Posts-master-blue.svg)](https://github.com/seisman/seisman.info.posts/tree/master)
 
 这样的设计具有如下一些优点：
 
@@ -22,9 +22,6 @@
    单独的仓库中则图片可以正常显示
 4. 若未来切换博客引擎，所有博文可在少量修改的前提下迁移到新的博客引擎下，且能够保留
    所有修订历史
-5. 博文的 `master` 分支包含了所有博文的重要更新，而 `dev` 分支则是在 `master` 分支的
-   基础上加上了微小的改动（比如错别字、语法问题、排版问题等等）。这样既可以保证网页
-   版始终最正确，又能保证这些微小的改动不会污染博文的修订历史
 
 [SeisMan博客]: http://seisman.info
 [Hexo]: https://hexo.io/

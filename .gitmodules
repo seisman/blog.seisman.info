@@ -5,4 +5,4 @@
 [submodule "source"]
     path = source
     url = https://github.com/seisman/seisman.info.posts.git
-    branch = dev
+    branch = master
