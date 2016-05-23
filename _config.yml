@@ -118,3 +118,8 @@ category_generator:
 ## tag
 tag_generator:
   per_page: 20
+
+## pandoc
+pandoc:
+  filters:
+    - ./pandoc-images-filter.py
