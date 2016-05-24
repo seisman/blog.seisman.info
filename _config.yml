@@ -122,4 +122,4 @@ tag_generator:
 ## pandoc
 pandoc:
   filters:
-    - ./pandoc-images-filter.py
+    - ./pandoc-filters.js
