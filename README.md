@@ -32,7 +32,7 @@
 
 读者可以通过访问网址 http://seisman.info 阅读博客内容，也可以在自己的机器上离线预览博客。
 只需要通过如下几个简单的步骤，即可实现离线预览。整个过程大概不到10分钟（前提是网速还可以，
-相关网站没有被墙）：
+相关网站没有被墙）。
 
 #### 初次使用
 
@@ -45,13 +45,14 @@ $ exec $SHELL -l
 $ nvm install v4
 
 # 3. 安装pandoc作为markdown解析器
-# Ubuntu:
-$ sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
-$ sudo apt-get update
-$ sudo apt-get install pandoc
-# CentOS
-$ sudo yum install epel-release
-$ sudo yum install pandoc
+# 要求pandoc版本号>1.16，因而对于大多数发行版而言需要手动安装pandoc
+# 首先到 https://github.com/jgm/pandoc/releases/latest 下载最新版本deb安装包
+# 对于Ubuntu用户
+$ sudo dpkg -i pandoc-xxx-amd64.deb
+# 对于CentOS用户
+$ ar p pandoc-xxx-amd64.deb data.tar.gz | sudo tar xvz --strip-components 2 -C /usr
+# 检查pandoc版本
+$ pandoc -v
 
 # 4. Clone项目源码至本地
 $ git clone https://github.com/seisman/seisman.info.git
@@ -66,8 +67,14 @@ $ npm install hexo gulp -g
 # 7. 安装项目依赖
 $ npm install
 
-# 8. 生成网站，到 `http://localhost:4000/` 查看
+# 8. 修改
+# 博客默认使用存放在七牛云的图片以优化网页访问速度
+# 在本地预览时，建议直接调用本地图片。执行如下命令实现自动修改
+$ sh local-use.sh
+
+# 9. 生成网站，到 `http://localhost:4000/` 查看
 $ hexo s
+
 ```
 
 #### 更新以追踪博客的更新
