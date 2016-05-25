@@ -95,7 +95,7 @@ plugins:
 ## feed
 feed:
   type: atom
-  path: all.atom.xml
+  path: atom.xml
   limit: 20
 
 ## Search
