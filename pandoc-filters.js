@@ -8,7 +8,7 @@
  */
 
 var pandoc = require('pandoc-filter');
-var cdn = "http://7j1zxm.com1.z0.glb.clouddn.com";
+var cdn = "//o7sbpc9b9.qnssl.com";
 
 function action(type, value, format, meta) {
     if (type === 'Image') value[2][0] = cdn + value[2][0];
