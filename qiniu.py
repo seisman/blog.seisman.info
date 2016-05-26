@@ -34,11 +34,11 @@ if __name__ == "__main__":
     run_qrsyn("source/_pdfs", "seisman", "pdfs/")
     run_qrsyn("source/images", "seisman", "images/")
 
-    # if not os.path.exists("public"):
-    #     subprocess.run("hexo g")
-    #     subprocess.run("gulp")
-    #
-    # # JS
-    # run_qrsyn("public/js", "next-assets", "js/")
-    # # CSS
-    # run_qrsyn("public/css", "next-assets", "css/")
+    if not os.path.exists("public"):
+        subprocess.run("hexo g", shell=True)
+        subprocess.run("gulp", shell=True)
+
+    # JS
+    run_qrsyn("public/js", "seisman", "js/")
+    # CSS
+    run_qrsyn("public/css", "seisman", "css/")
