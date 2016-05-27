@@ -119,7 +119,3 @@ category_generator:
 tag_generator:
   per_page: 20
 
-## pandoc
-pandoc:
-  filters:
-    - ./pandoc-filters.js

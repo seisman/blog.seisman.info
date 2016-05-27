@@ -27,21 +27,5 @@ script:
 after_success:
   - git config --global user.name "Dongdong Tian"
   - git config --global user.email "seisman.info@gmail.com"
-
-  # deploy to coding.net
-  - cd public
-  - git init && git add . && git commit -m "pages for coding"
-  - git push -u -f "https://${CODING_USER}:${CODING_PASSWD}@${CODING_URL}" master:${CODING_BRANCH}
-  - cd ..
-
-  # deploy to github.com
-  - hexo clean
-  - sed -i 's!//cdn.bootcss.com/.*.js$!!' themes/next/_config.yml
-  - sed -i 's!//cdn.bootcss.com/.*.css$!!' themes/next/_config.yml
-  - sed -i 's!//o7sbpc9b9.qnssl.com/!!' themes/next/_config.yml
-  - sed -i 's/- .\/pandoc-filters.js//' _config.yml
-  - hexo generate --silent
-  - gulp
-  - cd public
-  - git init && git add . && git commit -m "pages for github"
-  - git push -u -f "https://${GH_TOKEN}@github.com/seisman/seisman.info.git" master:gh-pages
+  - sed -i "s~git@github.com:~https://${GH_TOKEN}@github.com/~" _config.yml
+  - hexo d
