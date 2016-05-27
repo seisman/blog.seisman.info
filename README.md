@@ -44,15 +44,11 @@ $ exec $SHELL -l
 # 2. 安装 [Node.js](https://nodejs.org/)
 $ nvm install v4
 
-# 3. 安装pandoc作为markdown解析器
-# 要求pandoc版本号>1.16，因而对于大多数发行版而言需要手动安装pandoc
-# 首先到 https://github.com/jgm/pandoc/releases/latest 下载最新版本deb安装包
-# 对于Ubuntu用户
-$ sudo dpkg -i pandoc-xxx-amd64.deb
-# 对于CentOS用户
-$ ar p pandoc-xxx-amd64.deb data.tar.gz | sudo tar xvz --strip-components 2 -C /usr
-# 检查pandoc版本
-$ pandoc -v
+# 3. 安装 [pandoc](http://pandoc.org/)
+# Ubuntu 用户
+$ sudo apt-get install pandoc
+# CentOS 用户
+$ sudo yum install pandoc
 
 # 4. Clone项目源码至本地
 $ git clone https://github.com/seisman/seisman.info.git
@@ -67,14 +63,8 @@ $ npm install hexo gulp -g
 # 7. 安装项目依赖
 $ npm install
 
-# 8. 修改
-# 博客默认使用存放在七牛云的图片以优化网页访问速度
-# 在本地预览时，建议直接调用本地图片。执行如下命令实现自动修改
-$ sh local-use.sh
-
-# 9. 生成网站，到 `http://localhost:4000/` 查看
+# 8. 生成网站，到 `http://localhost:4000/` 查看
 $ hexo s
-
 ```
 
 #### 更新以追踪博客的更新
@@ -83,6 +73,33 @@ $ hexo s
 $ git pull
 $ git submodule update --remote
 ```
+
+### 优化
+
+#### 安装最新版 pandoc
+
+本项目使用 pandoc 作为 markdown 解析器，生成网页时对 pandoc 版本无要求，
+但生成 PDF 时要求 pandoc 版本>1.16，因而需要手动安装最新版 pandoc.
+因而对于大多数发行版而言需要手动安装pandoc
+
+1. 下载：到 https://github.com/jgm/pandoc/releases/latest 下载最新版本deb安装包
+
+2. 安装
+
+   对于Ubuntu用户
+   ```
+   $ sudo dpkg -i pandoc-xxx-amd64.deb
+   ```
+
+   对于CentOS用户
+   ```
+   $ ar p pandoc-xxx-amd64.deb data.tar.gz | sudo tar xvz --strip-components 2 -C /usr
+   ```
+   
+3. 检查pandoc版本
+   ```
+   $ pandoc -v
+   ```
 
 ### 网页压缩与优化
 
