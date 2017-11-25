@@ -80,20 +80,21 @@ $ git submodule update --remote
 #### 安装最新版 pandoc
 
 本项目使用 pandoc 作为 markdown 解析器，生成网页时对 pandoc 版本无要求，但生成 PDF 时
-要求 pandoc 版本>1.16。因而如果想要本地生成 PDF 则需要手动安装最新版 pandoc。
+对 pandoc 版本有要求。因而如果想要本地生成 PDF 则需要手动安装最新版 pandoc。
 
-1. 下载：到 https://github.com/jgm/pandoc/releases/latest 下载最新版本deb安装包
+1. 下载：到 https://github.com/jgm/pandoc/releases/latest 下载最新版本安装包
 
 2. 安装
 
-   对于Ubuntu用户
+   对于Ubuntu用户，下载deb安装包并按照如下命令安装
    ```
    $ sudo dpkg -i pandoc-xxx-amd64.deb
    ```
 
-   对于CentOS用户
+   对于CentOS用户，下载tar.gz安装包并按照如下命令安装
    ```
-   $ ar p pandoc-xxx-amd64.deb data.tar.gz | sudo tar xvz --strip-components 2 -C /usr
+   $ tar -xvf pandoc-2.0.3-linux.tar.gz
+   $ mv pandoc-2.0.3/bin/pandoc pandoc-2.0.3/bin/pandoc-citeproc ~/bin/
    ```
 
 3. 检查pandoc版本
