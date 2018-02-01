@@ -1,8 +1,8 @@
-[submodule "themes/next"]
-    path = themes/next
-    url = https://github.com/seisman/hexo-theme-next.git
-    branch = seisman
-[submodule "source"]
-    path = source
+[submodule "content"]
+	path = content
     url = https://github.com/seisman/seisman.info.posts.git
-    branch = master
+	branch = master
+[submodule "themes/even"]
+	path = themes/even
+	url = https://github.com/seisman/hugo-theme-even.git
+	branch = seisman
