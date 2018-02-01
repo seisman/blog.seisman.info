@@ -1,4 +1,4 @@
-baseURL = "http://seisman.info/"
+baseURL = "http://blog.seisman.info/"
 languageCode = "zh-CN"
 title = "SeisMan"
 enableRobotsTXT = true
