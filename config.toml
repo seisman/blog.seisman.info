@@ -57,8 +57,8 @@ disablePathToLower = true
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = ""        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["Hugo", "theme","even"]
-  description = "地球物理学小众博客。"
+  keywords = ["地球物理学", "地震学", "SAC", "软件", "开源"]
+  description = "地球物理学个人小众博客"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
   archivePaginate = 20
