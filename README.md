@@ -9,7 +9,7 @@
 主题和博文均作为网站生成引擎（即本项目）的子模块。
 本项目会追踪主题的 `seisman` 分支和博文的 `master` 分支。
 
-- 引擎： [![Hugo](https://img.shields.io/badge/Hugo-master-blue.svg)](https://github.com/seisman/seisman.info/tree/master)
+- 引擎： [![Hugo](https://img.shields.io/badge/Hugo-master-blue.svg)](https://github.com/seisman/blog.seisman.info/tree/master)
 - 主题： [![Even](https://img.shields.io/badge/Even-seisman-blue.svg)](https://github.com/seisman/hugo-theme-even/tree/seisman)
 - 博文： [![Posts](https://img.shields.io/badge/Posts-master-blue.svg)](https://github.com/seisman/seisman.info.posts/tree/master)
 
@@ -24,7 +24,7 @@
 4. 若未来切换博客引擎，所有博文可在少量修改的前提下迁移到新的博客引擎下，且能够保留
    所有修订历史
 
-[SeisMan博客]: http://seisman.info
+[SeisMan博客]: http://blog.seisman.info
 [Hugo]: https://gohugo.io/
 [Even]: https://github.com/seisman/hugo-theme-even
 
@@ -45,11 +45,11 @@
 
 2.  Clone项目源码至本地
 
-        $ git clone --recursive https://github.com/seisman/seisman.info.git
+        $ git clone --recursive https://github.com/seisman/blog.seisman.info.git
 
 3.  预览网站
 
-        $ cd seisman.info
+        $ cd blog.seisman.info
         $ hugo server
 
     浏览器打开 `http://localhost:1314/` 以离线查看
@@ -61,29 +61,3 @@
 $ git pull
 $ git submodule update --remote
 ```
-
-### 优化
-
-#### 安装最新版 pandoc
-
-本项目在生成 PDF 时对 pandoc 版本有要求，如果想要本地生成 PDF 则需要手动安装最新版 pandoc。
-
-1. 下载：到 https://github.com/jgm/pandoc/releases/latest 下载最新版本安装包
-
-2. 安装
-
-   对于Ubuntu用户，下载deb安装包并按照如下命令安装
-   ```
-   $ sudo dpkg -i pandoc-xxx-amd64.deb
-   ```
-
-   对于CentOS用户，下载tar.gz安装包并按照如下命令安装
-   ```
-   $ tar -xvf pandoc-2.0.3-linux.tar.gz
-   $ mv pandoc-2.0.3/bin/pandoc pandoc-2.0.3/bin/pandoc-citeproc ~/bin/
-   ```
-
-3. 检查pandoc版本
-   ```
-   $ pandoc -v
-   ```
