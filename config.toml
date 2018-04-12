@@ -46,6 +46,12 @@ disablePathToLower = true
   identifier = "tags"
   url = "/tags/"
 
+[[menu.main]]
+  name = "PDF"
+  weight = 5
+  identifier = "pdf"
+  url = "http://seisman.qiniudn.com/seisman-blog.pdf"
+
 [permalinks]
   post = "/:slug/"
 
