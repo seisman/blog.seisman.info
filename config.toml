@@ -16,6 +16,7 @@ disablePathToLower = true
 
 [blackfriday]
   fractions = false
+  hrefTargetBlank = true  # opens external links in a new window or tab.
 
 [author]                  # essential                     # 必需
   name = "SeisMan"
