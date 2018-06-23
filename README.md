@@ -24,7 +24,7 @@
 4. 若未来切换博客引擎，所有博文可在少量修改的前提下迁移到新的博客引擎下，且能够保留
    所有修订历史
 
-[SeisMan博客]: http://blog.seisman.info
+[SeisMan博客]: https://blog.seisman.info
 [Hugo]: https://gohugo.io/
 [Even]: https://github.com/seisman/hugo-theme-even
 

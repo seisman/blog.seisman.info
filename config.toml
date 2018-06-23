@@ -1,4 +1,4 @@
-baseURL = "http://blog.seisman.info/"
+baseURL = "https://blog.seisman.info/"
 languageCode = "zh-CN"
 defaultContentLanguage = "zh-cn"
 title = "SeisMan"
