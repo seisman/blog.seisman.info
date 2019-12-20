@@ -58,7 +58,7 @@ ignoreFiles = ["README.md"]
   post = "/:slug/"
 
 [params]
-  version = "3.x"           # Used to give a friendly message when you have an incompatible update
+  version = "4.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
   since = "2013"            # Site creation time          # 站点建立时间
