@@ -49,8 +49,13 @@ ignoreFiles = ["README.md"]
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "PDF"
+  name = "链接"
   weight = 5
+  identifier = "links"
+  url = "https://link.seisman.info/"
+[[menu.main]]
+  name = "PDF"
+  weight = 6
   identifier = "pdf"
   url = "http://seisman.qiniudn.com/seisman-blog.pdf"
 
