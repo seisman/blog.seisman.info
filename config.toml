@@ -52,7 +52,7 @@ ignoreFiles = ["README.md"]
   name = "链接"
   weight = 5
   identifier = "links"
-  url = "https://link.seisman.info/"
+  url = "https://seismo-learn.org/links/"
 [[menu.main]]
   name = "PDF"
   weight = 6
